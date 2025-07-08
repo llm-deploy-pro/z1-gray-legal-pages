@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - accessnode.cc [SYSTEM PROTOCOL]</title>
+    <style>
+        /* Z1-Gray · HUD Visual Protocol V1.0 (Consistent with privacy.html) */
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+        :root {
+            --base-bg: #0f0f0f;
+            --panel-bg: rgba(20, 22, 25, 0.85);
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --accent-glow: #00ffff;
+            --accent-solid: #00bfff;
+            --border-color: rgba(0, 255, 255, 0.2);
+            --glow-shadow: 0 0 12px rgba(0, 255, 255, 0.2);
+            --inset-glow: inset 0 0 15px rgba(0, 255, 255, 0.1);
+        }
+
+        body {
+            background-color: var(--base-bg);
+            color: var(--text-primary);
+            font-family: 'Roboto', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-image: 
+                linear-gradient(rgba(0, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            box-shadow: var(--inset-glow), var(--glow-shadow);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+        h1, h2, h3 {
+            font-family: 'JetBrains Mono', 'Segoe UI', monospace;
+            line-height: 1.3;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2.2em;
+            text-align: center;
+            letter-spacing: 0.1em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 8px var(--accent-glow);
+        }
+
+        .last-updated {
+            text-align: center;
+            color: var(--accent-solid);
+            margin-bottom: 40px;
+            font-style: normal;
+            font-family: 'JetBrains Mono', monospace;
+            opacity: 0.7;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 1.6em;
+            letter-spacing: 0.05em;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid transparent;
+            border-image: linear-gradient(to right, var(--accent-solid), transparent 50%) 1;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            height: 22px;
+            width: 8px;
+            background-color: var(--accent-solid);
+            box-shadow: 0 0 6px var(--accent-solid);
+            border-radius: 2px;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            font-size: 1.2em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-left: 3px solid var(--accent-solid);
+            padding-left: 15px;
+        }
+
+        p, ul {
+            margin-bottom: 1.2em;
+            color: var(--text-secondary);
+        }
+        
+        p {
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        li::before {
+            content: '>>';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--accent-solid);
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 700;
+        }
+
+        a {
+            color: var(--accent-solid);
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 8px var(--accent-glow);
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+        
+        .disclaimer-box {
+            border: 1px solid rgba(255, 100, 100, 0.3);
+            background-color: rgba(255, 0, 0, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .disclaimer-box p {
+            color: #ffcccc;
+            margin: 0;
+        }
+
+
+        /* Responsive Design */
+        @media (max-width: 840px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                margin: 20px auto;
+                padding: 25px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            h3 {
+                font-size: 1.1em;
+            }
+            p {
+                text-align: left;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Terms of Service</h1>
+        <p class="last-updated">Effective Date: October 26, 2023</p>
+
+        <h2>1. Introduction & Agreement to Terms</h2>
+        <p>This Terms of Service document ("Terms", "Agreement") constitutes a legally binding agreement between you ("User", "you") and the operators of accessnode.cc ("we", "us", "our"). These Terms govern your access to and use of the website located at https://accessnode.cc (the "Site"), as well as any and all related digital products, content, media, and services, including the Z1-Gray product suite (collectively, the "Service").</p>
+        <p>By accessing the Site, purchasing a product, or otherwise using the Service, you acknowledge that you have read, understood, and agree to be bound by all of these Terms. If you do not agree with all of these Terms, then you are expressly prohibited from using the Service and you must discontinue use immediately. Your continued use of the Service signifies your full acceptance of this Agreement.</p>
+
+        <h2>2. User Eligibility & Responsibilities</h2>
+        <p>To access or use the Service, you must be at least 18 years of age or the age of legal majority in your jurisdiction, and you must possess the legal authority, right, and freedom to enter into these Terms as a binding agreement. Individuals under this age are not permitted to use the Service.</p>
+        <p>As a user of the Service, you agree to the following responsibilities:</p>
+        <ul>
+            <li>You will provide accurate, current, and complete information during any registration or purchase process and will update such information to keep it accurate.</li>
+            <li>You are responsible for maintaining the confidentiality of any account information and are fully responsible for all activities that occur under your account.</li>
+            <li>You agree not to use the Service for any illegal, harmful, or unauthorized purpose. This includes, but is not limited to, violating any applicable local, state, national, or international law.</li>
+            <li>You shall not attempt to decompile, reverse engineer, disassemble, or hack any of the Service's software or systems.</li>
+            <li>You will not interfere with or disrupt the integrity or performance of the Service, its servers, or networks connected to it. This includes distributing viruses, malware, or any other destructive code.</li>
+            <li>You may not use the Service to harass, abuse, or harm another person or group.</li>
+        </ul>
+        <p>We reserve the right, in our sole discretion, to suspend, terminate, or restrict your access to the Service at any time, without notice, for any reason, including for conduct that we believe violates these Terms or is otherwise harmful to other users of the Service, us, or third parties.</p>
+
+        <h2>3. Description of Service</h2>
+        <p>The Service consists of providing access to and delivery of non-tangible, irrevocable digital products, including but not limited to structured psychological guidance systems, analytical reports, courses, and documents in formats such as PDF (the "Products"). The Products are intended for personal, educational, and informational purposes only.</p>
+        <p>Upon successful payment, you will receive access to download or view the digital Products. This access may be for a one-time download or for a limited period, as specified at the time of purchase. You acknowledge that the Service is fully rendered once the digital Product is made accessible to you.</p>
+        <div class="disclaimer-box">
+            <p><strong>IMPORTANT DISCLAIMER:</strong> The Service and all its Products are not a substitute for professional medical, psychological, or psychiatric advice, diagnosis, or treatment. The content is designed for structural guidance and informational purposes. It does not constitute medical advice and should not be relied upon as such. Always seek the advice of a qualified health professional with any questions you may have regarding a medical or mental health condition. Never disregard professional medical advice or delay in seeking it because of something you have read or accessed through our Service.</p>
+        </div>
+        
+        <h2>4. Payment Terms</h2>
+        <p>All purchases of Products through the Site are processed by our third-party e-commerce partner and merchant of record, <strong>FastSpring</strong>. By making a purchase, you agree to be bound by FastSpring's own Terms of Service and Privacy Policy.</p>
+        <p>You agree to provide current, complete, and accurate purchase and account information for all purchases made via the Site. You further agree to promptly update account and payment information, including email address, payment method, and payment card expiration date, so that our payment processor can complete your transactions and contact you as needed. We do not collect, process, or store your full credit card or financial information; this is handled securely by FastSpring. We only receive information necessary to confirm your order and deliver the Product, such as your name, email, and order details.</p>
+        <p>All prices are listed in U.S. Dollars unless otherwise specified. You agree to pay all charges at the prices then in effect for your purchases, and you authorize our third-party payment processor to charge your chosen payment provider for any such amounts upon placing your order. We reserve the right to correct any errors or mistakes in pricing, even if we have already requested or received payment.</p>
+
+        <h2>5. Refund Policy</h2>
+        <p>Due to the digital, non-tangible, and irrevocable nature of our Products, all sales are considered final and non-refundable once the Product has been delivered, accessed, or downloaded. By completing a purchase, you acknowledge and agree that the right of withdrawal is waived upon the commencement of a product download or access.</p>
+        <p>We encourage you to carefully review the product descriptions before making a purchase. If you encounter a technical issue with accessing or downloading a purchased Product, such as a corrupted file or a broken link, please contact our support team within <strong>seven (7) days</strong> of your purchase. We will work with you to resolve the technical issue. In cases where the issue cannot be resolved, a refund may be considered at our sole discretion. All such requests must be sent to: <a href="mailto:support@accessnode.cc">support@accessnode.cc</a>.</p>
+        <p>For more detailed information, please refer to our full Refund Policy, which may be available at a dedicated /refund page on our Site.</p>
+
+        <h2>6. Intellectual Property Rights</h2>
+        <p>Unless otherwise indicated, the Service and all its content are our proprietary property. This includes all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics on the Site (collectively, the "Content") and the trademarks, service marks, and logos contained therein (the "Marks"). The Content and Marks are protected by copyright and trademark laws and various other intellectual property rights and unfair competition laws of the United States, foreign jurisdictions, and international conventions.</p>
+        <p>Upon purchase, we grant you a limited, non-exclusive, non-transferable, revocable license for personal, non-commercial use of the purchased Products. This license is for your use only. You are expressly forbidden from:</p>
+        <ul>
+            <li>Copying, reproducing, aggregating, republishing, uploading, posting, publicly displaying, or distributing the Content or Products in any way.</li>
+            <li>Selling, renting, leasing, sub-licensing, or otherwise commercially exploiting the Content or Products.</li>
+            <li>Creating derivative works based on the Content or Products.</li>
+            <li>Using the Content or Products for any purpose other than personal, informational use.</li>
+        </ul>
+        <p>Any use of the Service or its Content other than as specifically authorized herein, without our prior written permission, is strictly prohibited and will terminate the license granted herein.</p>
+
+        <h2>7. Limitation of Liability</h2>
+        <p>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, THE SERVICE AND ALL PRODUCTS ARE PROVIDED ON AN "AS-IS" AND "AS-AVAILABLE" BASIS. YOU AGREE THAT YOUR USE OF THE SERVICE WILL BE AT YOUR SOLE RISK. WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE SERVICE AND YOUR USE THEREOF, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+        <p>WE MAKE NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY, COMPLETENESS, OR EFFICACY OF THE SERVICE'S CONTENT OR THE CONTENT OF ANY WEBSITES LINKED TO THIS SITE. IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST REVENUE, LOSS OF DATA, OR OTHER DAMAGES ARISING FROM YOUR USE OF THE SERVICE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+        <p>NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, OUR LIABILITY TO YOU FOR ANY CAUSE WHATSOEVER AND REGARDLESS OF THE FORM OF THE ACTION, WILL AT ALL TIMES BE LIMITED TO THE AMOUNT PAID, IF ANY, BY YOU TO US FOR THE SERVICE DURING THE SIX (6) MONTH PERIOD PRIOR TO ANY CAUSE OF ACTION ARISING.</p>
+        
+        <h2>8. Governing Law & Dispute Resolution</h2>
+        <p>These Terms and your use of the Service are governed by and construed in accordance with the laws of the State of Delaware, United States, without regard to its conflict of law principles. Any legal action or proceeding arising under these Terms will be brought exclusively in the federal or state courts located in Delaware, and the parties hereby irrevocably consent to the personal jurisdiction and venue therein.</p>
+        <p>To expedite resolution and control the cost of any dispute, controversy, or claim related to these Terms (each a "Dispute"), you and we agree to first attempt to negotiate any Dispute (except those Disputes expressly provided below) informally for at least thirty (30) days before initiating arbitration or court action. Such informal negotiations commence upon written notice from one party to the other. You will send your notice to <a href="mailto:support@accessnode.cc">support@accessnode.cc</a>.</p>
+        
+        <h2>9. Contact Information</h2>
+        <p>We are committed to providing a transparent and understandable framework for our Service. If you have any questions, concerns, or comments regarding these Terms of Service, or if you need to provide any notice required by this Agreement, please do not hesitate to contact our support team.</p>
+        <p>All official communications should be directed to our designated support channel:</p>
+        <p><strong>Support Email: <a href="mailto:support@accessnode.cc">support@accessnode.cc</a></strong></p>
+        <p>We will make a reasonable effort to respond to your inquiries in a timely manner.</p>
+    </div>
+
+</body>
+</html>
