@@ -1,0 +1,208 @@
+/* compliance-style.css - V6 Final Readability & Trust Enhancement */
+/* This stylesheet is engineered for maximum readability and professional impression */
+/* on compliance review teams, using only HTML and CSS. */
+
+/* 1. Design System & Variables */
+:root {
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --color-background: #F9FAFB;
+    --color-surface: #FFFFFF;
+    --color-text-primary: #111827;
+    --color-text-secondary: #6B7280;
+    --color-border: #E5E7EB;
+    --color-tag-background: #F3F4F6; /* Lighter gray for tags */
+    --color-tag-text: #374151;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.03), 0 1px 2px rgba(0, 0, 0, 0.02); /* More subtle shadow */
+    --border-radius-md: 12px;
+}
+
+/* 2. Global Resets & Body Styling */
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    line-height: 1.6em; /* Enhanced line height for readability */
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 80px 24px;
+}
+
+p {
+    max-width: 80ch; /* Limit text width for readability */
+}
+
+/* 3. Header Section */
+.page-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.page-header__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+}
+
+.page-header__subtitle {
+    font-size: 18px;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+/* 4. Card Component System */
+.card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 32px; /* Increased spacing between cards */
+    padding: 32px;
+}
+
+.card__title {
+    font-size: 20px; /* Enhanced title size */
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+}
+
+.card__body {
+    padding-top: 8px; /* Added padding for better spacing */
+}
+
+/* 5. Module-Specific Styles */
+
+/* User Journey Flow */
+.flow__description {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    background-color: var(--color-background);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    border: 1px solid var(--color-border);
+}
+
+.flow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.flow__step {
+    text-align: center;
+    flex-basis: 22%;
+}
+
+.flow__step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    margin: 0 auto 16px;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+}
+
+.flow__step-label {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.flow__arrow {
+    font-size: 20px;
+    color: var(--color-border);
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+/* Attribute Summary */
+.attributes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.attribute {
+    text-align: center;
+}
+
+.attribute__title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+}
+
+.attribute__description {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+/* Compliance Highlight Tags */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: var(--color-tag-background);
+    color: var(--color-tag-text);
+    font-size: 12px;
+    font-weight: 500; /* Adjusted for better readability */
+    padding: 6px 14px; /* Slightly more padding */
+    border-radius: 8px; /* Modern "rounded-xl" style */
+}
+
+/* 6. Footer Section */
+.page-footer {
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 24px;
+    border-top: 1px solid var(--color-border);
+}
+
+.page-footer p {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+/* 7. Responsive Adjustments */
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 40px 16px;
+    }
+    
+    .flow {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    
+    .flow__arrow {
+        transform: rotate(90deg);
+        margin: 0;
+    }
+    
+    .attributes {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
